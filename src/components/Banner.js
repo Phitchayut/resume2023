@@ -1,9 +1,10 @@
 import React from "react";
-import Profile from "../assets/profile.png";
+import Profile2 from "../assets/profile2.png";
 import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -20,7 +21,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
               BEAM <span>PHITCHAYUT</span>
             </motion.h1>
@@ -29,18 +30,18 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 text-[36px] lg:text-[55px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="mr-4 text-white">I am a</span>
               <TypeAnimation
-                sequence={["Developer", 2000, "UX/UI", 2000]}
+                sequence={["Front-end", 2000, "Developer", 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
                 repeat={Infinity}
               />
             </motion.div>
-            <motion.p
+            {/* <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
@@ -50,7 +51,7 @@ const Banner = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates delectus quis id ab quibusdam necessitatibus pariatur
               tempore aut laborum itaque.
-            </motion.p>
+            </motion.p> */}
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
@@ -58,9 +59,18 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact Me</button>
+              <Link
+                to="contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                className="flex justify-center items-center cursor-pointer h-[60px]"
+              >
+                <button className="btn btn-lg">Contact Me</button>
+              </Link>
+
               <a href="#" className="text-gradient btn-link">
-                My Portfolio
+                Resume
               </a>
             </motion.div>
             {/* social */}
@@ -88,9 +98,9 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[600px]"
+            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[500px]"
           >
-            <img src={Profile} alt="" />
+            <img src={Profile2} alt="" />
           </motion.div>
         </div>
       </div>

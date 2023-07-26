@@ -1,6 +1,8 @@
 import React from 'react';
 import {BiHomeAlt,BiUser} from 'react-icons/bi'
+import {FaBookReader} from 'react-icons/fa'
 import {BsClipboardData,BsBriefcase,BsChatSquare} from 'react-icons/bs'
+import {GiSkills} from 'react-icons/gi'
 import {Link} from 'react-scroll'
 
 const Nav = () => {
@@ -14,8 +16,11 @@ const Nav = () => {
           <Link to='about' activeClass="active" spy={true} smooth={true} className="flex justify-center items-center cursor-pointer h-[60px]">
             <BiUser />
           </Link>
-          <Link to='services' activeClass="active" spy={true} smooth={true} className="flex justify-center items-center cursor-pointer h-[60px]">
-            <BsClipboardData />
+          <Link to='education' activeClass="active" spy={true} smooth={true} className="flex justify-center items-center cursor-pointer h-[60px]">
+            <FaBookReader />
+          </Link>
+          <Link to='skills' activeClass="active" spy={true} smooth={true} className="flex justify-center items-center cursor-pointer h-[60px]">
+            <GiSkills />
           </Link>
           <Link to='work' activeClass="active" spy={true} smooth={true} className="flex justify-center items-center cursor-pointer h-[60px]">
             <BsBriefcase />
