@@ -38,10 +38,8 @@ const Education = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:bg-services bg-contain bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 text-4xl text-accent mb-6">Education</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              Bechelor of Business Administration, <span className="text-gradient">Business Computer</span>.
-            </h3>
+            <h2 className="h2 text-5xl text-accent mb-6">Education</h2>
+
           </motion.div>
           {/* service */}
           <motion.div

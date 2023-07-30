@@ -1,6 +1,6 @@
 import React from "react";
 import Profile2 from "../assets/profile2.png";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLine } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
@@ -41,17 +41,15 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            {/* <motion.p
+            <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-8 max-w-lg mx-auto lg:mx-0 text-accent text-[36px] lg:text-[55px]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates delectus quis id ab quibusdam necessitatibus pariatur
-              tempore aut laborum itaque.
-            </motion.p> */}
+              Never Stop Learning.
+            </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
@@ -81,14 +79,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a href="https://github.com/Phitchayut" target="blank">
                 <FaGithub />
               </a>
               <a href="#">
-                <FaYoutube />
+                <FaFacebook />
               </a>
               <a href="#">
-                <FaDribbble />
+                <FaLine />
               </a>
             </motion.div>
           </div>
