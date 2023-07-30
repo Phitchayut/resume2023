@@ -51,7 +51,7 @@ const Skills = {
         img: imgJquery,
       },
       {
-        name: "tailwind",
+        name: "tailwind css",
         img: imgTailwind
       },
       {
@@ -59,7 +59,7 @@ const Skills = {
         img: imgBootstrap
       },
       {
-        name: "mui",
+        name: "MaterialUI",
         img: imgMui
       }
     ],
