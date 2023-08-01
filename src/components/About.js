@@ -26,51 +26,22 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About Me</h2>
+            <h2 className="h2 text-5xl text-accent">About Me</h2>
             <h3 className="h3 mb-4">
-              I'm Freelance Front-end Developer with over 5 years of experience.
+              I'm a Front-end Developer.
             </h3>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              perspiciatis voluptatum. Deserunt eveniet rem error sunt
-              repellendus debitis ipsa consequuntur.
-            </p>
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              
+            <div className="flex flex-col  mb-12">
+              <p className="h3 text-xl">My Name is: <span className="text-gradient text-3xl">Phitchayut Chanpherng</span></p>
+              <p className="h3 text-xl">Nick Name: <span className="text-gradient text-3xl">Beam</span></p>
+              <p className="h3 text-xl">My Birth date: <span className="text-gradient text-3xl">10 November 1995</span></p>
+              <h1 className="h2 text-5xl text-gradient">{inView ? <CountUp start={0} end={28} duration={3} /> : null} <span className="text-lg">Year Old</span></h1>
             </div>
             <div className="flex justify-center lg:justify-start gap-x-8 items-center">
-                <button className="btn btn-lg">Contact Me</button>
-                <a href="#" className="text-gradient btn-link">
-                  My Portfolio
-                </a>
-              </div>
+              <button className="btn btn-lg">Hire Me</button>
+              <a href="#" className="text-gradient btn-link">
+                Resume
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

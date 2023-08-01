@@ -5,6 +5,7 @@ module.exports = {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      thai: 'Kanit',
     },
     container: {
       padding: {
@@ -26,6 +27,7 @@ module.exports = {
         site: "url('./assets/bgblur.jpg')",
         about: "url('./assets/profile3.png')",
         services: "url('./assets/profile4.png')",
+        exp: "url('./assets/profile5.png')",
       },
     },
   },

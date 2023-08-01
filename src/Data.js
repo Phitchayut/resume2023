@@ -17,7 +17,7 @@ import imgGithub from "./assets/skills/github.png";
 import imgUipath from "./assets/skills/uipath.png";
 import imgOffice from "./assets/skills/office.png";
 import imgPhotoshop from "./assets/skills/photoshop.png";
-const Skills = {
+export const SkillsList = {
   frontend: {
     basic: [
       {
@@ -113,4 +113,3 @@ const Skills = {
   },
 };
 
-export default Skills;

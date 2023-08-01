@@ -8,6 +8,8 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,10 +18,12 @@ const App = () => {
       <Banner />
       <Nav />
       <About />
+      <Experience />
       <Education />
       <Skills />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 };

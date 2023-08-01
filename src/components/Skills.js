@@ -1,5 +1,5 @@
 import React from "react";
-import skills from "../Data";
+import {SkillsList} from "../Data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -36,7 +36,7 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
           >
-            {skills.frontend.basic.map((item) => (
+            {SkillsList.frontend.basic.map((item) => (
               <div className="text-center p-3">
                 <img
                   src={item.img}
@@ -57,7 +57,7 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap items-center justify-center text-center text-zinc-200"
           >
-            {skills.frontend.framework.map((item) => (
+            {SkillsList.frontend.framework.map((item) => (
               <div className="text-center p-3">
                 <img
                   src={item.img}
@@ -82,7 +82,7 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
           >
-            {skills.backend.lang.map((item) => (
+            {SkillsList.backend.lang.map((item) => (
               <div className="text-center p-3">
                 <img
                   src={item.img}
@@ -103,7 +103,7 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap items-center justify-center text-center text-zinc-200"
           >
-            {skills.backend.database.map((item) => (
+            {SkillsList.backend.database.map((item) => (
               <div className="text-center p-3">
                 <img
                   src={item.img}
@@ -128,7 +128,7 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
           >
-            {skills.other.app.map((item) => (
+            {SkillsList.other.app.map((item) => (
               <div className="text-center p-3">
                 <img
                   src={item.img}

@@ -64,7 +64,7 @@ const Banner = () => {
                 smooth={true}
                 className="flex justify-center items-center cursor-pointer h-[60px]"
               >
-                <button className="btn btn-lg">Contact Me</button>
+                <button className="btn btn-lg">Hire Me</button>
               </Link>
 
               <a href="#" className="text-gradient btn-link">
