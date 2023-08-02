@@ -24,13 +24,13 @@ const Experience = () => {
               <h3 className="h3 mb-4 text-gradient">2016 - Present</h3>
             </div>
             <div className="flex flex-col  mb-12">
-              <p className="h3 text-xl">
-                Job Title:{" "}
-                <span className="text-gradient text-3xl">
-                  General Registration Section
-                </span>{" "}
-                <span className="font-thai">(ส่วนงานทะเบียน)</span>
-              </p>
+              <div className="text-center lg:text-left mb-3">
+                <p className="h3 text-xl">Job Title:</p>
+                <span className="text-gradient text-3xl capitalize">
+                  registration division
+                </span>
+                <span className="font-thai ml-3">(ส่วนงานทะเบียน)</span>
+              </div>
               <p className="h3 text-xl font-thai">
                 ดูแลในส่วนของสมาชิก สมัครใหม่/ต่ออายุ,ให้บริการหน้าเคาน์เตอร์
                 และงานอื่นๆที่ได้รับมอบหมาย

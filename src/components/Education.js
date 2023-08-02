@@ -8,21 +8,20 @@ const education = [
     name: "Southeast Bangkok College",
     bechelor: "Bechelor of Business Administration, Business Computer",
     year: "2018 - 2020",
-    gpa: "3.54"
+    gpa: "3.54",
   },
   {
     name: "Attawit Commercial Technology College",
     bechelor: "High Vocational, Business Computer",
     year: "2014 - 2016",
-    gpa: "3.11"
+    gpa: "3.11",
   },
   {
     name: "Hadamara Aksornlak Wittaya School",
     bechelor: "High School, Business Computer",
     year: "2010 - 2014",
-    gpa: "3.09"
+    gpa: "3.09",
   },
-
 ];
 
 const Education = () => {
@@ -39,9 +38,8 @@ const Education = () => {
             className="flex-1 lg:bg-services bg-contain bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-5xl text-accent mb-6">Education</h2>
-
           </motion.div>
-          {/* service */}
+          {/* education */}
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
@@ -49,7 +47,7 @@ const Education = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            {/* service list */}
+            {/* education list */}
             <div>
               {education.map((item, index) => (
                 <div
@@ -60,16 +58,18 @@ const Education = () => {
                     <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                       {item.name}
                     </h4>
-                    <p className="font-secondary leading-tight">{item.bechelor}</p>
+                    <p className="font-secondary leading-tight">
+                      {item.bechelor}
+                    </p>
                   </div>
                   <div className="flex flex-col flex-1 items-end">
                     <a
                       href="#"
-                      className="mb-[42px] flex justify-center items-center"
+                      className="mb-[15px] lg:[42px] text-center lg:text-left flex justify-center items-center"
                     >
-                     GPA {item.gpa}
+                      GPA {item.gpa}
                     </a>
-                    <a href="#" className="text-gradient text-sm">
+                    <a href="#" className="text-gradient text-sm text-center">
                       {item.year}
                     </a>
                   </div>
