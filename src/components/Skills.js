@@ -39,7 +39,9 @@ const Skills = () => {
           >
             {SkillsList.frontend.basic.map((item) => (
               <div className="text-center p-3">
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
                   className="w-[4.5rem] h-[4.5rem] p-2"
@@ -60,7 +62,9 @@ const Skills = () => {
           >
             {SkillsList.frontend.framework.map((item) => (
               <div className="text-center p-3">
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
                   className="w-[4.5rem] h-[4.5rem] p-2"
@@ -85,7 +89,9 @@ const Skills = () => {
           >
             {SkillsList.backend.lang.map((item) => (
               <div className="text-center p-3">
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
                   className="w-[4.5rem] h-[4.5rem] object-cover p-2"
@@ -106,7 +112,9 @@ const Skills = () => {
           >
             {SkillsList.backend.database.map((item) => (
               <div className="text-center p-3">
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
                   className="w-[4.5rem] h-[4.5rem] object-cover p-2"
@@ -127,11 +135,13 @@ const Skills = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
+            className="flex flex-wrap justify-center items-center text-center text-zinc-200"
           >
             {SkillsList.other.app.map((item) => (
               <div className="text-center p-3">
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
                   className="w-[4.5rem] h-[4.5rem] p-2"
