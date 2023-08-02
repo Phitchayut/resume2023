@@ -37,8 +37,8 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
           >
-            {SkillsList.frontend.basic.map((item) => (
-              <div className="text-center p-3">
+            {SkillsList.frontend.basic.map((item, index) => (
+              <div className="text-center p-3" key={index}>
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -60,8 +60,8 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap items-center justify-center text-center text-zinc-200"
           >
-            {SkillsList.frontend.framework.map((item) => (
-              <div className="text-center p-3">
+            {SkillsList.frontend.framework.map((item, index) => (
+              <div className="text-center p-3" key={index}>
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -87,8 +87,8 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center  text-zinc-200"
           >
-            {SkillsList.backend.lang.map((item) => (
-              <div className="text-center p-3">
+            {SkillsList.backend.lang.map((item, index) => (
+              <div className="text-center p-3" key={index}>
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -110,8 +110,8 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap items-center justify-center text-center text-zinc-200"
           >
-            {SkillsList.backend.database.map((item) => (
-              <div className="text-center p-3">
+            {SkillsList.backend.database.map((item, index) => (
+              <div className="text-center p-3" key={index}>
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -137,8 +137,8 @@ const Skills = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-wrap justify-center items-center text-center text-zinc-200"
           >
-            {SkillsList.other.app.map((item) => (
-              <div className="text-center p-3">
+            {SkillsList.other.app.map((item, index) => (
+              <div className="text-center p-3" key={index}>
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
