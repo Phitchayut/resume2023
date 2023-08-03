@@ -6,8 +6,8 @@ const Footer = () => {
       <h1 className="text-center h2 text-3xl lg:text-5xl text-accent">
         Design With
       </h1>
-      <div className="flex flex-col lg:flex-row justify-center text-center">
-        <div className="flex-1 w-full border-b-2 border-blue-400 lg:border-0 lg:border-r-2 lg:border-blue-400 p-5">
+      <div className="flex flex-col lg:flex-row justify-center text-center border rounded-xl">
+        <div className="flex-1 w-full border-b-2 border-blue-400 lg:border-0 lg:border-r-2  p-5">
           <h1 className="h4 text-xl text-gradient">Main</h1>
           <ul>
             <li>React Js</li>
@@ -20,8 +20,8 @@ const Footer = () => {
             <li>framer motion</li>
             <li>react icons</li>
             <li>react scroll</li>
-            <li>react type animation</li>
             <li>react countup</li>
+            <li>react type animation</li>
           </ul>
         </div>
       </div>

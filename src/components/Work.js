@@ -11,7 +11,7 @@ const Work = () => {
       <div className="container mx-auto mt-10">
         <div className="flex flex-col lg:flex-row gap-x-10 items-center">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
@@ -28,11 +28,11 @@ const Work = () => {
                 และหากมีเทคโนโลยีใหม่ๆ เข้ามาก็จะศึกษาไปเรื่อยๆ
               </p>
               <div className="flex justify-center lg:justify-start">
-              <button className="btn btn-sm">
-                <a href="https://github.com/Phitchayut" target="blank">
-                  View All Project
-                </a>
-              </button>
+                <button className="btn btn-sm">
+                  <a href="https://github.com/Phitchayut" target="blank">
+                    View All Project
+                  </a>
+                </button>
               </div>
             </div>
             <a href="https://zfxsdx.csb.app/" target="blank">
@@ -53,7 +53,7 @@ const Work = () => {
             </a>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.3)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
