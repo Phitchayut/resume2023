@@ -1,6 +1,6 @@
 import React from "react";
 import Profile2 from "../assets/profile2.png";
-import { FaGithub, FaFacebook, FaLine } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLine, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
@@ -82,11 +82,14 @@ const Banner = () => {
               <a href="https://github.com/Phitchayut" target="blank">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/beam.phitchayut/">
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a href="https://line.me/ti/p/g97CJh6wkQ">
                 <FaLine />
+              </a>
+              <a href="https://www.instagram.com/phitchayutbeam/">
+                <FaInstagram />
               </a>
             </motion.div>
           </div>

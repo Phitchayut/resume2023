@@ -27,7 +27,7 @@ const Skills = () => {
       >
         <div className="border-0 lg:border-r-4 lg:border-indigo-500/75">
           <h1 className="h3 text-3xl text-gradient">Front-end</h1>
-          <p className="text-rose-500/75 font-semibold text-xl tracking-wide italic">
+          <p className="text-gray-400 font-semibold text-xl tracking-wide italic">
             Basic
           </p>
           <motion.div
@@ -50,7 +50,7 @@ const Skills = () => {
               </div>
             ))}
           </motion.div>
-          <p className="text-rose-500/75 font-semibold text-xl tracking-wide italic">
+          <p className="text-gray-400 font-semibold text-xl tracking-wide italic">
             Framework/Library
           </p>
           <motion.div
@@ -77,7 +77,7 @@ const Skills = () => {
         {/* end-fontend */}
         <div className="">
           <div className="h3 text-3xl text-gradient">Back-end</div>
-          <p className="text-rose-500/75 font-semibold text-xl tracking-wide italic">
+          <p className="text-gray-400 font-semibold text-xl tracking-wide italic">
             Basic
           </p>
           <motion.div
@@ -100,7 +100,7 @@ const Skills = () => {
               </div>
             ))}
           </motion.div>
-          <p className="text-rose-500/75 font-semibold text-xl tracking-wide italic">
+          <p className="text-gray-400 font-semibold text-xl tracking-wide italic">
             Database
           </p>
           <motion.div
@@ -127,7 +127,7 @@ const Skills = () => {
         {/* end-backend */}
         <div className="border-0 lg:border-l-4 lg:border-indigo-500/75">
           <div className="h3 text-3xl text-gradient">Others</div>
-          <p className="text-rose-500/75 font-semibold text-xl tracking-wide italic">
+          <p className="text-gray-400 font-semibold text-xl tracking-wide italic">
             Basic
           </p>
           <motion.div

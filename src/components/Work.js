@@ -9,10 +9,10 @@ const Work = () => {
   return (
     <section id="work">
       <div className="container mx-auto mt-10">
-        <div className="flex flex-col lg:flex-row gap-x-10">
+        <div className="flex flex-col lg:flex-row gap-x-10 items-center">
           <div className="flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0">
             <div>
-              <h2 className="h2 text-5xl leading-tight text-accent">
+              <h2 className="h2 text-5xl leading-tight text-accent text-center lg:text-left">
                 My Projects
               </h2>
               <p className="max-w-md mb-5 font-thai">
@@ -44,7 +44,7 @@ const Work = () => {
               </div>
             </a>
           </div>
-          <div className="flex-1 flex flex-col gap-y-10 mt-5">
+          <div className="flex-1 flex flex-col gap-y-10 mt-8 items-center">
             <a
               href="https://cheerful-blancmange-4d77d6.netlify.app/"
               target="blank"
