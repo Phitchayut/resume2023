@@ -10,9 +10,15 @@ const Work = () => {
     <section id="work">
       <div className="container mx-auto mt-10">
         <div className="flex flex-col lg:flex-row gap-x-10 items-center">
-          <div className="flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0">
-            <div>
-              <h2 className="h2 text-5xl leading-tight text-accent text-center lg:text-left">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.4 }}
+            className="flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0"
+          >
+            <div className="text-center lg:text-left">
+              <h2 className="h2 text-5xl leading-tight text-accent">
                 My Projects
               </h2>
               <p className="max-w-md mb-5 font-thai">
@@ -21,11 +27,13 @@ const Work = () => {
                 แบบใช้ Javascript ทั้งหมด เช่น MERN Stack เป็นต้น <br />{" "}
                 และหากมีเทคโนโลยีใหม่ๆ เข้ามาก็จะศึกษาไปเรื่อยๆ
               </p>
+              <div className="flex justify-center lg:justify-start">
               <button className="btn btn-sm">
                 <a href="https://github.com/Phitchayut" target="blank">
                   View All Project
                 </a>
               </button>
+              </div>
             </div>
             <a href="https://zfxsdx.csb.app/" target="blank">
               <div className="w-full h-[350px] lg:w-[500px] lg:h-[350px] group relative overflow-hidden border-2 border-white/50 rounder-xl cursor-pointer">
@@ -43,8 +51,14 @@ const Work = () => {
                 </div>
               </div>
             </a>
-          </div>
-          <div className="flex-1 flex flex-col gap-y-10 mt-8 items-center">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.4 }}
+            className="flex-1 flex flex-col gap-y-10 mt-8 items-center"
+          >
             <a
               href="https://cheerful-blancmange-4d77d6.netlify.app/"
               target="blank"
@@ -85,7 +99,7 @@ const Work = () => {
                 </div>
               </div>
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
