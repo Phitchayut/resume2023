@@ -31,7 +31,7 @@ const Experience = () => {
                 </span>
                 <span className="font-thai ml-3">(ส่วนงานทะเบียน)</span>
               </div>
-              <p className="h3 text-xl font-thai">
+              <p className="h3 text-xl font-thai text-center lg:text-left">
                 ดูแลในส่วนของสมาชิก สมัครใหม่/ต่ออายุ,ให้บริการหน้าเคาน์เตอร์
                 และงานอื่นๆที่ได้รับมอบหมาย
               </p>
