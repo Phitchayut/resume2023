@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { Link } from "react-scroll";
-import ResumePdf from '../assets/resume.pdf'
+import ResumePdf from "../assets/resume.pdf";
 
 const Banner = () => {
   return (
@@ -14,9 +14,9 @@ const Banner = () => {
       id="home"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+        <div className="flex flex-col-reverse items-center gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}
-          <div className="flex-1 text-center font-secondary lg:text-left">
+          <div className="flex-1 text-center font-secondary lg:text-left absolute lg:static z-20 bottom-40 lg:bottom-0">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -68,7 +68,11 @@ const Banner = () => {
                 <button className="btn btn-lg">Hire Me</button>
               </Link>
 
-              <a href={ResumePdf} download="Resume Download" className="text-gradient btn-link">
+              <a
+                href={ResumePdf}
+                download="Resume Download"
+                className="text-gradient btn-link"
+              >
                 Resume
               </a>
             </motion.div>
@@ -100,9 +104,9 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[500px]"
+            className="lg:flex flex-1 max-w-[320px] lg:max-w-[500px] relative lg:static -top-40 lg:top-0 z-10"
           >
-            <img src={Profile2} alt="" />
+            <img src={Profile2} alt="" className="opacity-50 lg:opacity-100" />
           </motion.div>
         </div>
       </div>

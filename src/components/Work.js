@@ -9,12 +9,12 @@ const Work = () => {
   return (
     <section id="work">
       <div className="container mx-auto mt-10">
-        <div className="flex flex-col lg:flex-row gap-x-10 items-center">
-          <motion.div
+        <motion.div 
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.4 }}
+            viewport={{ once: false, amount: 0.4 }} className="flex flex-col lg:flex-row gap-x-10 items-center">
+          <div
             className="flex-1 flex flex-col gap-y-12 mb-12 lg:mb-0"
           >
             <div className="text-center lg:text-left">
@@ -51,14 +51,8 @@ const Work = () => {
                 </div>
               </div>
             </a>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("up", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.4 }}
-            className="flex-1 flex flex-col gap-y-10 mt-8 items-center"
-          >
+          </div>
+          <div className="flex-1 flex flex-col gap-y-10 mt-8 items-center">
             <a
               href="https://cheerful-blancmange-4d77d6.netlify.app/"
               target="blank"
@@ -99,8 +93,8 @@ const Work = () => {
                 </div>
               </div>
             </a>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
