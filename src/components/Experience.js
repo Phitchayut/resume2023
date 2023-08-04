@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
+import ResumePdf from "../assets/resume.pdf";
 
 const Experience = () => {
   return (
@@ -46,7 +47,11 @@ const Experience = () => {
               >
                 <button className="btn btn-lg">Hire Me</button>
               </Link>
-              <a href="#" className="text-gradient btn-link">
+              <a
+                href={ResumePdf}
+                download="Resume Download"
+                className="text-gradient btn-link"
+              >
                 Resume
               </a>
             </div>

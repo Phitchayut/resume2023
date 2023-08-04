@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
+import ResumePdf from "../assets/resume.pdf";
+import Profile3 from "../assets/profile3.png";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -12,21 +14,24 @@ const About = () => {
   return (
     <section className="section" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col items-center gap-y-10 lg:flex-row lg:items-center lg:justify-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 mt-[8rem] hidden lg:block bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-          ></motion.div>
+            className="flex-1 lg:block max-w-[400px] lg:max-w-[500px] lg:h-[640px] mix-blend-lighten mt-0 lg:mt-12 relative lg:static bottom-[3.5rem] lg:top-0 z-10"
+          >
+            <img src={Profile3} alt="" className="opacity-50 lg:opacity-100" />
+          </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1"
+            className="flex-1 absolute lg:static"
           >
+            <div>
             <h2 className="h2 text-5xl text-accent text-center lg:text-left">
               About Me
             </h2>
@@ -67,9 +72,14 @@ const About = () => {
               >
                 <button className="btn btn-lg">Hire Me</button>
               </Link>
-              <a href="#" className="text-gradient btn-link">
+              <a
+                href={ResumePdf}
+                download="Resume Download"
+                className="text-gradient btn-link"
+              >
                 Resume
               </a>
+            </div>
             </div>
           </motion.div>
         </div>
