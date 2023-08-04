@@ -44,7 +44,7 @@ const Skills = () => {
                   whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
-                  className="w-[4.5rem] h-[4.5rem] p-2"
+                  className="w-[4rem] h-[4rem] p-2"
                 />
                 <p className="text-center">{item.name}</p>
               </div>
@@ -67,7 +67,7 @@ const Skills = () => {
                   whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
-                  className="w-[4.5rem] h-[4.5rem] p-2"
+                  className="w-[4rem] h-[4rem] p-2"
                 />
                 <p className="text-center">{item.name}</p>
               </div>
@@ -94,7 +94,7 @@ const Skills = () => {
                   whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
-                  className="w-[4.5rem] h-[4.5rem] object-cover p-2"
+                  className="w-[4rem] h-[4rem] object-cover p-2"
                 />
                 <p className="text-center">{item.name}</p>
               </div>
@@ -117,7 +117,7 @@ const Skills = () => {
                   whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
-                  className="w-[4.5rem] h-[4.5rem] object-cover p-2"
+                  className="w-[4rem] h-[4rem] object-cover p-2"
                 />
                 <p className="text-center">{item.name}</p>
               </div>
@@ -144,7 +144,7 @@ const Skills = () => {
                   whileTap={{ scale: 0.9 }}
                   src={item.img}
                   alt=""
-                  className="w-[4.5rem] h-[4.5rem] p-2"
+                  className="w-[4rem] h-[4rem] p-2"
                 />
                 <p className="text-center">{item.name}</p>
               </div>

@@ -14,7 +14,7 @@ const Experience = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1"
+            className="flex-1 text-center lg:text-left"
           >
             <h2 className="h2 text-5xl text-accent">Experience</h2>
             <h3 className="h2 text-xl mb-4 text-gradient">
@@ -30,7 +30,9 @@ const Experience = () => {
                 <span className="text-gradient text-3xl capitalize">
                   registration division
                 </span>
-                <span className="font-thai ml-3">(ส่วนงานทะเบียน)</span>
+                <span className="font-thai ml-3 block lg:inline-block">
+                  (ส่วนงานทะเบียน)
+                </span>
               </div>
               <p className="h3 text-xl font-thai text-center lg:text-left">
                 ดูแลในส่วนของสมาชิก สมัครใหม่/ต่ออายุ,ให้บริการหน้าเคาน์เตอร์

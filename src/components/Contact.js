@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Facebook from "../assets/social/facebook.png";
@@ -7,6 +10,37 @@ import Instagram from "../assets/social/instagram.png";
 const styleSocial = "w-16 h-16 mb-5 hover:scale-125 duration-300";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_m7jted9",
+        "template_fjogjcx",
+        form.current,
+        "jgXTOIROPG3Pl2uQZ"
+      )
+      .then(
+        (result) => {
+          toast.success("🦄 Send Email Successfully!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+          form.current.reset();
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
+  };
   return (
     <section className="py-10 lg:section" id="contact">
       <div class="container mx-auto">
@@ -24,14 +58,14 @@ const Contact = () => {
                 Tel. :
                 <span className="text-gradient text-xl block lg:inline-block">
                   {" "}
-                   080-872-5915
+                  080-872-5915
                 </span>
               </p>
               <p className="text-xl font-semibold">
                 Email. :
                 <span className="text-gradient text-xl block lg:inline-block">
                   {" "}
-                   beam.phitchayut@gmail.com
+                  beam.phitchayut@gmail.com
                 </span>
               </p>
               <h2 className="h2 text-gradient mt-3 text-center lg:text-left">
@@ -64,24 +98,50 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center"
+          >
             <input
               type="text"
+              name="name"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Your Name"
+              required
             />
             <input
-              type="text"
+              type="email"
+              name="email"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Your Email"
+              required
             />
             <textarea
+              name="message"
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your Message"
+              required
             ></textarea>
-            <button className="btn btn-lg">Send message</button>
+            <input
+              type="submit"
+              value="Send message"
+              className="btn btn-lg cursor-pointer"
+            />
           </form>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
       </div>
     </section>
   );
